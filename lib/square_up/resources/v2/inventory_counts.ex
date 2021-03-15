@@ -12,8 +12,8 @@ defmodule SquareUp.V2.InventoryCounts do
   def batch_retrieve(client, path_params \\ %{}, params \\ %{}, query_params \\ %{}) do
     path_params_spec = schema(%{})
 
-    params_spec =
-      Norm.Delegate.delegate(&SquareUp.NormSchema.batch_retrieve_inventory_counts_request/0)
+    #params_spec = Norm.Delegate.delegate(&SquareUp.NormSchema.batch_retrieve_inventory_counts_request/0)
+    params_spec = schema(%{})
 
     query_params_spec = schema(%{})
 
